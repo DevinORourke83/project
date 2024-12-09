@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Cormorant Garamond', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #7851A9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 10px 15px; /* Add padding for better clickable area */
+    border-radius: 5px; /* Slight rounding for buttons */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover Effect for Navigation Links */
+nav a:hover {
+    background-color: #FFD700; /* Gold background on hover */
+    color: #7851A9; /* Match header background for contrast */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Main Content Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 2em;
+    color: #7851A9;
+}
+
+/* Flexbox Layout for About Us Section */
+.about-us-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.about-us-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Employee & Product Grid Styling */
+.team {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee, .product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+}
+
+.employee img, .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #7851A9;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .employee, .product {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Stack the image and text on smaller screens */
+    .about-us-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        padding-right: 0;
+    }
+
+    .image-section {
+        margin-top: 20px;
+    }
+}
+
